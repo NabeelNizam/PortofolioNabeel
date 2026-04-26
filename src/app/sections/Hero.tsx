@@ -26,10 +26,10 @@ export default function Hero() {
                 <div className="flex items-center justify-between">
                     {/* social links */}
                     <div className="flex gap-8 text-sm text-gray-300">
-                        <a href="#" className="hover:text-white transition">LINKEDIN ↗</a>
-                        <a href="#" className="hover:text-white transition">GITHUB ↗</a>
-                        <a href="#" className="hover:text-white transition">EMAIL ↗</a>
-                        <a href="#" className="hover:text-white transition">INSTAGRAM ↗</a>
+                        <a href="https://www.linkedin.com/in/nabeel-nizam-pol/" className="hover:text-white transition">LINKEDIN ↗</a>
+                        <a href="https://github.com/NabeelNizam" className="hover:text-white transition">GITHUB ↗</a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abee237@gmail.com" target="_blank" className="hover:text-white transition">EMAIL ↗</a>
+                        <a href="https://www.instagram.com/izamnbl/" className="hover:text-white transition">INSTAGRAM ↗</a>
                     </div>
 
                     <a
