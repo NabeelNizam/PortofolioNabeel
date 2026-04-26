@@ -1,7 +1,8 @@
+import RevealSection from "@/components/RevealSection"
+
 export default function Hero() {
     return (
-        <section id="hero" className="min-h-screen px-20 py-24 pt-45 flex flex-col justify-between text-white">
-
+        <RevealSection id="hero" className="min-h-screen px-20 py-24 pt-30 flex flex-col justify-between text-white">
             <div>
                 <div className="flex items-center gap-3 mb-6">
                     <div className="w-2 h-2 rounded-full bg-white" />
@@ -42,6 +43,6 @@ export default function Hero() {
                 </div>
             </div>
 
-        </section>
+        </RevealSection>
     )
 }

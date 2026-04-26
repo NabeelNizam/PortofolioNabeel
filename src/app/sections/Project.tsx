@@ -1,10 +1,11 @@
 import Project1 from "./components/card/Project1"
 import Project2 from "./components/card/Project2"
 import Project3 from "./components/card/Project3"
+import RevealSection from "@/components/RevealSection"
 
 export default function Project() {
     return (
-        <section id="project" className="text-white px-20 py-24">
+        <RevealSection id="project" className="text-white px-20 py-24">
             <div className="text-center mb-20">
                 <p className="text-sm text-gray-300 mb-6 tracking-wide">
                     ✦ Selected Works
@@ -30,6 +31,6 @@ export default function Project() {
                 </a>
             </div> */}
 
-        </section>
+        </RevealSection>
     )
 }

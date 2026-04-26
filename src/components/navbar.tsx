@@ -64,25 +64,23 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Header */}
-      <header className="w-full px-16 py-5 flex items-center justify-between relative z-50">
+      <header className="w-full px-16 py-5 flex items-center justify-between relative">
         <a href="#hero">
           <Image
-            src={`${basePath}/logo_Nabeel.svg`}
+            src="/logo_Nabeel.svg"
             alt="Logo"
             width={60}
             height={60}
             priority
-            className="rounded-full"
+            className="rounded-full z-60"
           />
         </a>
 
-        {/* FIXED: anchor lengkap */}
         <a
           href="#contact"
           className="
             relative bg-white text-black text-sm font-semibold tracking-wide
-            px-6 py-2.5 rounded-full overflow-hidden
+            px-6 py-2.5 z-50 rounded-full overflow-hidden
             transition-all duration-300 ease-out
             hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.18)]
             active:scale-95
@@ -92,8 +90,7 @@ export default function Navbar() {
         </a>
       </header>
 
-      {/* Floating Nav */}
-      <nav className="sticky top-4 z-40 flex justify-center -mt-5">
+      <nav className="sticky top-4 z-40 flex justify-center -mt-20">
         <div
           ref={navRef}
           className="
@@ -104,7 +101,7 @@ export default function Navbar() {
             shadow-[0_8px_32px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.08)]
           "
         >
-          {/* Indicator */}
+  
           <span
             className="
               absolute bg-white rounded-full

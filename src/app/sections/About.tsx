@@ -1,8 +1,9 @@
 import Image from "next/image";
+import RevealSection from "@/components/RevealSection"
 
 export default function About() {
     return (
-        <section id="about" className="text-white py-32 px-20">
+        <RevealSection id="about" className="text-white py-32 px-20">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
                 <div>
                     <p className="text-sm text-gray-400 mb-4 tracking-wide">
@@ -45,6 +46,6 @@ export default function About() {
                 </div>
 
             </div>
-        </section>
+        </RevealSection>
     );
 }

@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, ChangeEvent, FormEvent } from "react"
+import RevealSection from "@/components/RevealSection"
 
 export default function Contact() {
     const [form, setForm] = useState({
@@ -47,7 +48,7 @@ export default function Contact() {
     }
 
     return (
-        <section id="contact" className="text-white py-32 px-6">
+        <RevealSection id="contact" className="text-white py-32 px-6">
             <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-14">
                     <p className="text-sm text-gray-400 mb-4 tracking-wide">
@@ -118,6 +119,6 @@ export default function Contact() {
                     </button>
                 </form>
             </div>
-        </section>
+        </RevealSection>
     )
 }
