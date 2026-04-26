@@ -25,7 +25,7 @@ export default function About() {
 
 
                     <a
-                        href="#"
+                        href="/CV_NABEELNIZAM.pdf" target="_blank"
                         className="inline-block bg-white text-black px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-200 transition"
                     >
                         My Resume ↗
