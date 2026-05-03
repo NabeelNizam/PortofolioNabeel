@@ -7,7 +7,7 @@ export default function Hero() {
                 <div className="flex items-center gap-3 mb-6">
                     <div className="w-2 h-2 rounded-full bg-white" />
                     <p className="text-sm tracking-wide uppercase text-gray-300">
-                        Hello, I'm Nabeel Nizam
+                        Hello, I&apos;m Nabeel Nizam
                     </p>
                 </div>
 
