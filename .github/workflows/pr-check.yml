@@ -3,10 +3,16 @@ name: PR Quality Check
 on:
   pull_request:
     branches: [main]
+  push:
+    branches:
+      - feat/setup-nextjs-profile
 
 jobs:
   quality-check:
     runs-on: ubuntu-latest
+
+    env:
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
 
     steps:
       - name: Checkout repository
@@ -26,8 +32,6 @@ jobs:
 
       - name: Build application
         run: npm run build
-        env:
-    RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
 
       - name: Build Docker image
         run: docker build -t student-profile-ci:test .
