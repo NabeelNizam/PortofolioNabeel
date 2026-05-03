@@ -10,9 +10,6 @@ const navItems = [
   { id: "contact", label: "Contact" },
 ]
 
-const basePath =
-  process.env.NODE_ENV === "production" ? "/PortofolioNabeel" : ""
-
 export default function Navbar() {
   const [active, setActive] = useState("hero")
   const [indicatorStyle, setIndicatorStyle] = useState({})
@@ -67,7 +64,7 @@ export default function Navbar() {
       <header className="w-full px-16 py-5 flex items-center justify-between relative">
         <a href="#hero">
           <Image
-            src="/Logo_Nabeel.svg"
+            src="/logo_Nabeel.svg"
             alt="Logo"
             width={60}
             height={60}
@@ -86,7 +83,7 @@ export default function Navbar() {
             active:scale-95
           "
         >
-          Let's Talk
+          Let&apos;s Talk
         </a>
       </header>
 

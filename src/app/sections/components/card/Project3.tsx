@@ -4,7 +4,6 @@ export default function ProjectCard() {
     return (
         <div className="p-8 rounded-3xl w-full text-white shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
 
-            {/* Image / Thumbnail */}
             <div className="w-full h-64 relative mb-6 rounded-xl overflow-hidden">
                 <Image 
                     src="/img/Project3.png"
@@ -15,7 +14,6 @@ export default function ProjectCard() {
                 />
             </div>
 
-            {/* Title + Badge */}
             <div className="flex items-center justify-between mb-3">
                 <p className="text-xl font-semibold tracking-wide">
                     Yayasan Masjid Al-Muhajirin
@@ -25,12 +23,10 @@ export default function ProjectCard() {
                 </span>
             </div>
 
-            {/* Subtitle */}
             <p className="text-sm text-gray-400 mb-6 leading-relaxed">
                 Website Profil Yayasan Masjid Al - Muhajirin
             </p>
 
-            {/* Divider */}
             <div className="border-t border-white/10"></div>
 
         </div>
