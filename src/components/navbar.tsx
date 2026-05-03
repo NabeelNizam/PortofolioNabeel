@@ -64,7 +64,7 @@ export default function Navbar() {
       <header className="w-full px-16 py-5 flex items-center justify-between relative">
         <a href="#hero">
           <Image
-            src="/logo_nabeel.svg"
+            src="/Logo_Nabeel.svg"
             alt="Logo"
             width={60}
             height={60}
