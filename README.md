@@ -1,36 +1,158 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Student Profile CI/CD Project
 
-## Getting Started
+A modern **Next.js student profile application** integrated with **CI/CD using GitHub Actions** and **Docker multi-stage builds**.
 
-First, run the development server:
+---
+
+## 👤 Student Information
+
+* **Name:** Nabeel Nizam
+* **Student ID:** *(2341720155)*
+* **Tech Interests:** Software Development
+
+---
+
+## 🌐 Live Demo
+
+🔗 [https://nabeel-portof.vercel.app/](https://nabeel-portof.vercel.app/)
+
+---
+
+## 🛠️ Tech Stack
+
+* ⚡ Next.js (App Router)
+* 🐳 Docker (Multi-stage build)
+* 🔁 GitHub Actions (CI/CD)
+* ☁️ Vercel (Deployment)
+* 📩 Resend API (Contact Form)
+
+---
+
+## 📦 Features
+
+* ✨ Personal student profile homepage
+* 📄 Sections: Hero, About, Projects, Contact
+* 📬 Contact form with email integration
+* 🧪 Automated lint & build checks on Pull Request
+* 🐳 Dockerized application for production
+
+---
+
+## 🔁 CI/CD Workflow
+
+### ✅ Pull Request
+
+* Run ESLint
+* Build Next.js application
+* Build Docker image (test only)
+
+### 🚀 Merge to Main
+
+* Build Docker image
+* Push image to Docker Hub
+
+---
+
+## 🐳 Docker
+
+### Build Image
+
+```bash
+docker build -t nabeelniz234/student-profile-ci:latest .
+```
+
+### Run Container
+
+```bash
+docker run -p 3000:3000 nabeelniz234/student-profile-ci:latest
+```
+
+### Docker Hub
+
+🔗 [https://hub.docker.com/r/nabeelniz234/student-profile-ci](https://hub.docker.com/r/nabeelniz234/student-profile-ci)
+
+---
+
+## ⚙️ Environment Variables
+
+Create `.env.local`:
+
+```env
+RESEND_API_KEY=your_api_key_here
+```
+
+---
+
+## 📂 Project Structure
+
+```
+.
+├── app/
+├── public/
+├── components/
+├── .github/
+│   └── workflows/
+├── Dockerfile
+├── package.json
+└── next.config.ts
+```
+
+---
+
+## 🚀 Getting Started
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Build Project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📌 Best Practices Applied
 
-To learn more about Next.js, take a look at the following resources:
+* ✔ Feature branch workflow
+* ✔ Pull Request for all changes
+* ✔ Clean commit messages
+* ✔ CI/CD integration
+* ✔ Docker multi-stage build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📬 Submission Links
 
-## Deploy on Vercel
+* 🔗 GitHub Repository: [https://github.com/NabeelNizam/PortofolioNabeel](https://github.com/NabeelNizam/PortofolioNabeel)
+* 🐳 Docker Hub: [https://hub.docker.com/r/nabeelniz234/student-profile-ci](https://hub.docker.com/r/nabeelniz234/student-profile-ci)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⭐ Notes
+
+This project is built as part of a DevOps/Cloud assignment focusing on:
+
+* CI/CD automation
+* Containerization
+* Modern web development practices
+
+---
+
+## 🙌 Author
+
+**Nabeel Nizam**
+GitHub: [https://github.com/NabeelNizam](https://github.com/NabeelNizam)
+
+---
+
+> Built with passion 🚀
