@@ -26,6 +26,8 @@ jobs:
 
       - name: Build application
         run: npm run build
+        env:
+    RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
 
       - name: Build Docker image
         run: docker build -t student-profile-ci:test .
